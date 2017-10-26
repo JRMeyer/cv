@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.2)  22 AUG 2017 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  26 OCT 2017 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -345,12 +345,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.121 \end{rSection}
-                    
-? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
@@ -423,34 +417,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
-Missing character: There is no â in font cmbx10!
-Missing character: There is no € in font cmbx10!
-Missing character: There is no ™ in font cmbx10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
+Missing character: There is no â in font cmbx10!
+Missing character: There is no € in font cmbx10!
+Missing character: There is no ™ in font cmbx10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+
 AED: lastpage setting LastPage
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 391.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 391.
  (./CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 389.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 391.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 391.
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 389.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 391.
  ) 
 Here is how much of TeX's memory you used:
  7380 strings out of 493029
- 104386 string characters out of 6136235
+ 104386 string characters out of 6136234
  187893 words of memory out of 5000000
  10868 multiletter control sequences out of 15000+600000
  9199 words of font info for 33 fonts, out of 8000000 for 9000
@@ -468,7 +467,7 @@ ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosy
 m/feymr10.pfb>
-Output written on CV.pdf (3 pages, 138331 bytes).
+Output written on CV.pdf (3 pages, 138448 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
