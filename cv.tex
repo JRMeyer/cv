@@ -14,7 +14,7 @@
 % .tex file. The resume.cls file provides the resume style used for structuring the
 % document.
 %
-%
+% Compile with xelatex
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -28,22 +28,25 @@
 \usepackage{tipa}
 \usepackage[hidelinks]{hyperref}
 \usepackage{url}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{eurosym}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{float}
 \pagestyle{fancy}
 
 
 \lhead{Joshua Meyer}
 \rhead{Curriculum Vitae}
 %% \cfoot{Page \thepage\ of \pageref{LastPage}}
-\cfoot{Page \thepage\ of 5}
+\cfoot{Page \thepage\ of 7}
 \renewcommand{\footrulewidth}{0.4pt}
 \setlength{\headheight}{15pt}
 \thispagestyle{empty}
 
-\name{Josh Meyer} % Your name
+\name{Joshua Meyer} % Your name
 
 \begin{document}
 
@@ -53,16 +56,113 @@
 \vspace{.15cm}
 \href{https://jrmeyer.github.io}{\textbf{jrmeyer.github.io}} \\
 \vspace{.15cm}
-\href{https://github.com/JRMeyer}{\faGithub} \hspace{.25cm} \href{https://www.linkedin.com/in/josh-r-meyer/}{\faLinkedin} \\
+ \href{https://www.linkedin.com/in/josh-r-meyer/}{\faLinkedin} \hspace{.25cm} \href{https://github.com/JRMeyer}{\faGithub} \\
+
+\vspace{.15cm}
+
+\textit{Josh is a leader working at the intersection of data, machine learning, generative AI, and language. With over a decade of experience, his career has spanned from large corporations to start-ups, from academia to non-profits. Holding a PhD, Josh deeply understands the technical underpinnings of AI. He has lead teams to successfully plan, execute, and ship products, and he cares deeply about customers and markets.}
 
 \vspace{.5cm}
 
-\textit{I work at the intersection of Data, Machine Learning, and open-source language technologies. I've worked in academia, big companies, and small startups, always striving to make Voice tech accessible to all languages and every developer.}
-
-\vspace{.5cm}
-
-\textit{Currently based in California.}
+%\textit{Currently based in California.}
 \end{center}
+
+
+\vspace{.25cm}
+
+\begin{rSection}{Experience}
+
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+        \includesvg[width=1cm]{imgs/coqui-logo.svg}
+      \end{minipage}
+      \begin{minipage}{0.8\textwidth}
+          {\bf Coqui} \hfill  co-founder \hfill {} {March 2021 --- Present} \\ \\
+          \textit{As one of four founders, Josh has been at every stage of the business. From pitching the first VCs, to collecting data for our AI models, to red-lining with enterprise customers. In the early days Josh spent most time training speech-to-text models and working on the data pipeline. As the business grew, Josh took on product and GTM leadership.} \\ \\
+          \textit{Board Member · Leadership Team · Go-to-Market Strategy · Product Strategy · R\&D · B2B Sales · Recruiting · Strategic Partnerships · PR and Marketing · Investor Relations · Customer Relations · Contract Negotiations} \\
+      \end{minipage}
+  \end{figure}
+
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includesvg[width=1cm]{imgs/mozilla-logo-small.svg}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+      {\bf Mozilla Foundation} \hfill Machine Learning Fellow \hfill {January 2020 --- March 2021} \\ \\
+      \textit{Josh lead the AI strategy for a multi-national mutli-stakeholder project to deploy voice technologies in East Africa, aligned with UN Sustainable Development goals. Target applications were a COVID radio monitoring dashboard for the Ugandan Ministry of Health as well as COVID informational voicebot for the Rwandan Information Society Authority. Partners included the German government, Ugandan academia, and the Rwandan startup sector. Josh was involved at every stage of the project, from ideation to pitching stakeholders, from data collection to model training and deployment. Josh developed the first publically available speech recognition models for the Kinyrwandan and Lugandan languages.} \\
+    \end{minipage}
+  \end{figure}
+
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includegraphics[width=1cm]{imgs/artie-logo-small.jpeg}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+      {\bf Artie, Inc.} \hfill Lead Scientist \hfill {July 2019 --- March 2021} \\ \\
+      \textit{Josh directed and developed all Speech technologies used at Artie. The target application was a game engine to deploy conversationally-driven avatars. Josh developed a pipeline for data collection and quality control as well as scaled the training of contextually dependent language model decoders for the DeepSpeech speech-to-text engine. Josh also experimented with text-to-speech at the time, but the state-of-the-art wasn't high enough for production use. Josh collected data, trained the core models, and worked with the backend team to deploy.} \\
+    \end{minipage}
+  \end{figure}
+
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includesvg[width=1cm]{imgs/nsf-logo.svg}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+      {\bf National Science Foundation} \hfill Graduate Research Fellow \hfill {May 2015 --- July 2019} \\ \\
+      \textit{Josh was awarded 1 out of 10 Fellowships nationally in his category. The Fellowship supported Josh during four years of dissertation research on automatic speech recognition. In particular, Josh worked on algorithms for more efficient training of speech recognition models for new languages. During his research, Josh spent one year in Paris as a research fellow at CNRS, and multiple data collection trips to Kyrgyzstan as a research fellow at the American University of Central Asia.} \\
+    \end{minipage}
+  \end{figure}
+
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includesvg[width=1cm]{imgs/mozilla-logo-small.svg}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+      {\bf Mozilla Corporation} \hfill ML Researcher \hfill {October 2018 --- May 2019} \\ \\
+      \textit{Josh joined the ML group at Mozilla in order to bring automatic speech recognition to as many languages as possible. He accomplished this by working closely with the data collection team (i.e. Project Common Voice) as well as training end-to-end speech recognition models via multitask and transfer learning with the core ML team (i.e. Project DeepSpeech).} \\
+    \end{minipage}
+  \end{figure}
+
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includegraphics[width=1cm]{imgs/kaldi-logo.png}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+      {\bf Various Companies} \hfill Speech Recognition Consultant \hfill {2016 --- 2018} \\ \\
+      \textit{Josh worked as an automatic speech recognition consultant, for companies ranging from large telecos to small edtech apps. He designed training and data pipelines, mostly revolving around the Kaldi toolkit. Kaldi was the state-of-the-art in speech recognition before DeepSpeech, and DeepSpeech was state-of-the-art until Whisper.} \\
+    \end{minipage}
+  \end{figure}
+
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includesvg[width=1cm]{imgs/cnrs-logo.svg}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+      {\bf CNRS} \hfill Chateaubriand Research Fellow  \hfill {2016 --- 2017} \\ \\
+      \textit{Josh researched transfer-learning for acoustic modeling and text augmentation for language modeling, as applied to speech recognition. Josh cemented his knowledge of the underpinnings of speech recognition at CNRS over this year. Josh's time at CNRS was supported by the French Embassy to the United States under a Chateaubriand Fellowship.}
+    \end{minipage}
+  \end{figure}
+
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includesvg[width=1cm]{imgs/auca-logo-small.svg}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+      {\bf American University of Central Asia} \hfill Research Fellow  \hfill {2013 --- 2014} \\ \\
+      \textit{During this research fellowship and multiple visits afterward, Josh conducted acoustic research on the Kyrgyz language. This included creation of a spoken dataset of Kyrgyz regional varieties, as well as acoustic-phonetic research on human perception of Russian and Kyrgyz by native speakers. He also organized a working group on computational linguistics for students, professors, and researchers.}
+    \end{minipage}
+  \end{figure}
+
+\end{rSection}
+
 
 
 %----------------------------------------------------------------------------------------
@@ -72,19 +172,39 @@
 \vspace{.5cm}
 \begin{rSection}{Education}
 
-{\bf University of Arizona} \hfill {July 2019} \\
-Ph.D. in Linguistics (focus: \textit{Computational Linguistics}) \hfill {\em Tucson, AZ}\\
-Thesis: \href{http://jrmeyer.github.io/misc/MEYER_dissertation_2019.pdf}{\textit{Multi-Task and Transfer Learning in Low-Resource Speech Recognition}} \hfill
-
-\vspace{.15cm}
-
+    \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includesvg[width=1cm]{imgs/uofa-logo.svg}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
+      {\bf University of Arizona} \hfill {July 2019} \\
+      Ph.D. in Computational Linguistics \hfill {\em Tucson, AZ}\\
+      Thesis: \href{http://jrmeyer.github.io/misc/MEYER_dissertation_2019.pdf}{\textit{Multi-Task and Transfer Learning in Low-Resource Speech Recognition}}
+    \end{minipage}
+    \end{figure}
+    
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includesvg[width=1cm]{imgs/uofa-logo.svg}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
 {\bf University of Arizona} \hfill {May 2015} \\
 M.A. in Linguistics \hfill {\em Tucson, AZ}
-
-\vspace{.15cm}
-
+    \end{minipage}
+  \end{figure}
+  
+  \begin{figure}[H]
+    \begin{minipage}{0.2\textwidth}
+      \centering
+      \includesvg[width=1cm]{imgs/shu-logo.svg}
+    \end{minipage}
+    \begin{minipage}{0.8\textwidth}
 {\bf Seton Hall University} \hfill {May 2012} \\
-B.A. in Liberal Studies \hfill {\em South Orange, NJ} \\
+B.A. in Liberal Studies \hfill {\em South Orange, NJ}
+    \end{minipage}
+  \end{figure}
 %% Summa Cum Laude \\
 %% Minor in French \\
 %% GPA: 3.92 \\
@@ -99,129 +219,9 @@ B.A. in Liberal Studies \hfill {\em South Orange, NJ} \\
 %\end{minipage}
 %----------------------------------------------------------------------------------------
 
-\vspace{.25cm}
-
-\begin{rSection}{Industry}
-
-{\bf Coqui} \hfill {March 2021 --- Present} \\
-Cofounder \& Head of Data \hfill {} \\
-\textit{Bringing Voice technologies to all languages and to every developer.} \hfill {} \\
-
-{\bf Mozilla Foundation} \hfill {January 2020 --- March 2021} \\
-Machine Learning Fellow \hfill {} \\
-\textit{Advising, building, and iterating on Voice technologies for East African languages.} \hfill {} \\
-
-{\bf Artie, Inc.} \hfill {July 2019 --- March 2021} \\
-Lead Scientist, Speech Technology \hfill {} \\
-\textit{Directing and developing all Speech technologies used at Artie.} \hfill {} \\
-
-{\bf Mozilla (Machine Learning Research Group)} \hfill {October 2018 --- May 2019} \\
-NSF-Sponsored Internship \hfill {} \\
-\textit{Developing end-to-end multilingual Automatic Speech Recognition techniques} \hfill {} \\
-\textit{based on Transfer Learning and Deep Neural Networks (i.e. DeepSpeech).} \hfill {} \\
-
-{\bf Various Companies} \hfill {2016 --- 2018} \\
-Kaldi \& ASR Consultant \hfill {} \\
-\textit{Optimized Automatic Speech Recognition pipelines} \hfill {} \\
-\textit{for various companies using the Kaldi toolkit.} \hfill {} \\
-
-\end{rSection}
-
-
-
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-\begin{minipage}{\textwidth}
-
-\begin{rSection}{Technical Strengths}
-\vspace{.25cm}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & Python, Bash, \textsc{MATLAB}, Perl, R, C++ (\textit{some knowledge}) \\
-Other & TensorFlow, PyTorch (\textit{some knowledge}), Kaldi, scikit-learn, pandas,\\
-& nltk, matplotlib, kenlm, Linux, AWS, git, GitHub \\
-\end{tabular}
-\end{rSection}
-
-\end{minipage}
 %------------------------------------------------------------------------
 
 
-%----------------------------------------------------------------------------------------
-
-\vspace{.25cm}
-
-\begin{rSection}{Open Source Work}
-
-{\textbf{Mozilla DeepSpeech}} {\hfill \textit{Added Transfer Learning} {\hspace{2.5cm} \href{https://github.com/mozilla/DeepSpeech/releases/tag/v0.7.0}{\textbf{[Code]}}}} \\\vspace{-.35cm}
-
-{\textbf{Multi-Task Kaldi}} {\hfill \textit{Multi-Task Acoustic Modeling with Neural Networks} {\hspace{2.5cm} \href{https://github.com/JRMeyer/multi-task-kaldi}{\textbf{[Code]}}}} \\\vspace{-.35cm}
-
-{\textbf{NVDA}} {\hfill \textit{Added Kyrgyz language to screen reader} {\hspace{2.5cm} \href{https://github.com/JRMeyer/nvda}{\textbf{[Code]}}}} \\\vspace{-.35cm}
-
-{\textbf{eSpeak NG}} {\hfill \textit{Added Kyrgyz language to speech synthesizer} {\hspace{2.5cm} \href{https://github.com/rhdunn/espeak/commits?author=JRMeyer}{\textbf{[Code]}}}}\\\vspace{-.35cm}
-
-{\textbf{Autotrace}} {\hfill \textit{Created visualization tools for ultrasonic imaging} {\hspace{2.5cm} \href{https://github.com/JRMeyer/Autotrace}{\textbf{[Code]}}}} \\
-\end{rSection}
-
-
-
-%----------------------------------------------------------------------------------------
-%	RESEARCH EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-%\begin{minipage}{\textwidth}
-\vspace{.25cm}
-
-\begin{rSection}{Research Experience}
-
-\begin{rSubsection}{National Science Foundation}{July 2015 --- July 2019}{Graduate Research Fellow}{}
-\item Conducting PhD thesis research on Multi-Task Learning and Deep Learning techniques for Automatic Speech Recognition in low-resource data scenarios.
-\end{rSubsection}
-
-
-\begin{rSubsection}{CNRS-LIMSI}{July 2016 --- July 2017}{Chateaubriand Research Fellow}{Orsay, France}
-\item Conducted research on Neural Network Acoustic Model adaptation, and Recurrent Neural text augmentation techniques for language modeling in Speech Recognition.
-\end{rSubsection}
-
-\begin{rSubsection}{American University of Central Asia}{June 2015 --- August 2015}{Visiting Research Scholar}{Bishkek, Kyrgyzstan}
-\item Created a spoken corpus of conversational speech for the Kyrgyz language.
-\end{rSubsection}
-%----------------------------------------------------------------------------------------
-
-\begin{rSubsection}{Arizona Phonological Imaging Lab}{Spring 2015}{Research Assistant}{Tucson, AZ}
-\item Developed software to visualize and statistically analyze ultrasonic images of tongue contours for articulatory-phonetics research.
-\end{rSubsection}
-%----------------------------------------------------------------------------------------
-
-\begin{rSubsection}{American University of Central Asia}{August 2013 --- March 2014}{Visiting Research Fellow}{Bishkek, Kyrgyzstan}
-\item Conducted acoustic-phonetic and phonological research on the Kyrgyz language, using paradigms from Cognitive Science.
-\end{rSubsection}
-%----------------------------------------------------------------------------------------
-
-\begin{rSubsection}{Arizona Scottish Gaelic Project}{September 2012 - July 2013}{Research Assistant}{Tucson, AZ}
-\item Conducted fieldwork with speakers of Scottish Gaelic; Aided in online grammar compilation
-\end{rSubsection}
-%----------------------------------------------------------------------------------------
-
-\begin{rSubsection}{Language Acquisition Research Center at Hunter CUNY}{November 2011 --- August 2012}{Research Assistant}{New York, NY}
-\item Designed text corpus-based research, transcribed spontaneous child speech, and designed the laboratory's website.
-\end{rSubsection}
-%----------------------------------------------------------------------------------------
-
-\begin{rSubsection}{KIT/NYU MEG Lab at NYU}{May 2012 --- August 2012}{Research Assistant}{New York, NY}
-\item Aided in analysis and processing of Magnetoencephalography (MEG) brain imaging data from cognitive science research.
-\end{rSubsection}
-%----------------------------------------------------------------------------------------
-
-\begin{rSubsection}{Language Acquisition and Neurolinguistics Lab at Rutgers}{May 2012 - August 2012}{Research Assistant}{New Brunswick, NJ}
-\item Aided in experimental design of Neurolinguistic research studies.
-\end{rSubsection}
-
-\end{rSection}
-
-%\end{minipage}
 %----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
@@ -231,8 +231,13 @@ Other & TensorFlow, PyTorch (\textit{some knowledge}), Kaldi, scikit-learn, pand
 
 \begin{minipage}{\textwidth}
 
-\begin{rSection}{Grants \& Awards}
-\vspace{.15cm}
+%\begin{rSection}{Grants \& Awards}
+\sectionskip
+\MakeUppercase{\textbf{Grants \& Awards}}
+  \sectionlineskip
+  \hrule
+
+\vspace{.25cm}
 
 
 %----------------------------------------------------------------------------------------
@@ -243,22 +248,22 @@ Other & TensorFlow, PyTorch (\textit{some knowledge}), Kaldi, scikit-learn, pand
 
 %----------------------------------------------------------------------------------------
 
-{\bf Graduate Research Fellowship} \hfill {2015-2019} \\
-{\em Approx. \$102,000 + \$36,000 (tuition)} \hfill {\em National Science Foundation} \\
+{Graduate Research Fellowship} \hfill {2015-2019} \\
+\textit{Approx. \$102,000 + \$36,000 (tuition)} \hfill {\em National Science Foundation} \\
 
 %----------------------------------------------------------------------------------------
 
-{\bf NSF INTERN Grant} \hfill {2018} \\
-{\em Approx. \${50,000}} \hfill {\em National Science Foundation} \\
+{NSF INTERN Grant} \hfill {2018} \\
+{Approx. \${50,000}} \hfill {\em National Science Foundation} \\
 
 %----------------------------------------------------------------------------------------
 
-{\bf Chateaubriand STEM Fellowship} \hfill {2016} \\
+{Chateaubriand STEM Fellowship} \hfill {2016} \\
 {\euro{5.000}} \hfill {\em French Embassy to the United States of America} \\
 
 %----------------------------------------------------------------------------------------
 
-{\bf GROW Travel Award} \hfill {2016} \\
+{GROW Travel Award} \hfill {2016} \\
 {\$5,000} \hfill {\em National Science Foundation} \\
 
 %----------------------------------------------------------------------------------------
@@ -268,22 +273,77 @@ Other & TensorFlow, PyTorch (\textit{some knowledge}), Kaldi, scikit-learn, pand
 
 %% %----------------------------------------------------------------------------------------
 
-{\bf Visiting Research Fellowship} \hfill {August 2013 --- March 2014} \\
-{\em \$5,000} \hfill {\em American University of Central Asia} \\
+{Visiting Research Fellowship} \hfill {August 2013 --- March 2014} \\
+{\$5,000} \hfill {\em American University of Central Asia} \\
 
 %----------------------------------------------------------------------------------------
 
-{\bf Regents Scholarship} \hfill {August 2008 --- May 2012} \\
-{\em \$111,140 (tuition)} \hfill {\em Seton Hall University} \\
+{Regents Scholarship} \hfill {August 2008 --- May 2012} \\
+{\$111,140 (tuition)} \hfill {\em Seton Hall University} \\
 
 %----------------------------------------------------------------------------------------
 
-%% {\bf Liberal Studies Honors Citation} \hfill {May 2012} \\
-%% {\null} \hfill {\em Seton Hall University} \\
+{Liberal Studies Honors Citation} \hfill {May 2012} \\
+{\null} \hfill {\em Seton Hall University} \\
 
-\end{rSection}
+%\end{rSection}
 \end{minipage}
 %----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+%\begin{minipage}{\textwidth}
+\vspace{.25cm}
+
+\begin{rSection}{Research Experience (Other)}
+
+%\begin{rSubsection}{National Science Foundation}{July 2015 --- July 2019}{Graduate Research Fellow}{}
+%\item Conducting PhD thesis research on Multi-Task Learning and Deep Learning techniques for Automatic Speech Recognition in low-resource data scenarios.
+%\end{rSubsection}
+
+%\begin{rSubsection}{CNRS-LIMSI}{July 2016 --- July 2017}{Chateaubriand Research Fellow}{Orsay, France}
+%\item Conducted research on Neural Network Acoustic Model adaptation, and Recurrent Neural text augmentation techniques for language modeling in Speech Recognition.
+%\end{rSubsection}
+
+%\begin{rSubsection}{American University of Central Asia}{June 2015 --- August 2015}{Visiting Research Scholar}{Bishkek, Kyrgyzstan}
+%\item Created a spoken corpus of conversational speech for the Kyrgyz language.
+%\end{rSubsection}
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{Arizona Phonological Imaging Lab}{2015}{Research Assistant}{Tucson, AZ}
+\item Developed software to visualize and statistically analyze ultrasonic images of tongue contours for articulatory-phonetics research.
+\end{rSubsection}
+%----------------------------------------------------------------------------------------
+
+%\begin{rSubsection}{American University of Central Asia}{August 2013 --- March 2014}{Visiting Research Fellow}{Bishkek, Kyrgyzstan}
+%\item Conducted acoustic-phonetic and phonological research on the Kyrgyz language, using paradigms from Cognitive Science.
+%\end{rSubsection}
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{Arizona Scottish Gaelic Project}{2012 --- 2013}{Research Assistant}{Tucson, AZ}
+\item Conducted fieldwork with speakers of Scottish Gaelic; Aided in online grammar compilation
+\end{rSubsection}
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{Language Acquisition Research Center at Hunter CUNY}{2011 --- 2012}{Research Assistant}{New York, NY}
+\item Designed text corpus-based research, transcribed spontaneous child speech, and designed the laboratory's website.
+\end{rSubsection}
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{KIT/NYU MEG Lab at NYU}{2012}{Research Assistant}{New York, NY}
+\item Aided in analysis and processing of Magnetoencephalography (MEG) brain imaging data from cognitive science research.
+\end{rSubsection}
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{Language Acquisition and Neurolinguistics Lab at Rutgers}{2012}{Research Assistant}{New Brunswick, NJ}
+\item Aided in experimental design of Neurolinguistic research studies.
+\end{rSubsection}
+
+\end{rSection}
+
+%\end{minipage}
 
 
 
@@ -291,32 +351,112 @@ Other & TensorFlow, PyTorch (\textit{some knowledge}), Kaldi, scikit-learn, pand
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}{\textwidth}
+  \begin{rSection}{Publications}
+    \vspace{.25cm}
 
-\begin{rSection}{Publications}
+\href{https://scholar.google.com/citations?user=XiAmdnYAAAAJ}{[Google Scholar Profile]}
+
 \vspace{.25cm}
 
-{(2020)} {Ardila, Rosana, and Branson, Megan, and Davis, Kelly, and Henretty, Michael, and Kohler, Michael, and Meyer, Josh, and Morais, Reuben, and Saunders, Lindsay, and Tyers, Francis M., and Weber, Gregor.} {\bf Common Voice: A Massively-Multilingual Speech Corpus.} {Proceedings of the 12th Conference on Language Resources and Evaluation (LREC 2020).} {\href{https://www.aclweb.org/anthology/2020.lrec-1.520.pdf}{[Link]}} \\
+{(2023)}
+{AfroDigits: A Community-Driven Spoken Digit Dataset for African Languages}.
+       {ICLR 2023 (AfricaNLP Workshop)}.
+       {Emezue, C; Gandhi, S; Tunstall, L; Abid, A; \textbf{Meyer, J}; Lhoest, Q; Allen, P; Von Platen, P; Kiela, D; Jernite, Y; Chaumond, J; Noyan, M.; Sanseviero, O}.
+       \emph{\url{https://arxiv.org/abs/2303.12582}}
+       \\
 
-{(2020)} {Meyer, Josh, and Rauchenstein, Lynn, and Eisenberg, Joshua D., and Howell, Nicholas.} {\bf Artie Bias Corpus: An Open Dataset for Detecting Demographic Bias in Speech Applications.} {Proceedings of the 12th Conference on Language Resources and Evaluation (LREC 2020).} {\href{https://www.aclweb.org/anthology/2020.lrec-1.796.pdf}{[Link]}} \\
+{(2022)}
+{BibleTTS: A Large, High-fidelity, Multilingual, and Uniquely African Speech Corpus}.
+       {ICLR 2022 (AfricaNLP Workshop)}.
+       {\textbf{Meyer, J}; Adelani, D; Casanova, E; Öktem, A; Whitenack, D; Weber, J; Kabongo, S; Salesky, E; Orife, I; Leong, C; Ogayo, P; Emezue, C; Mukiibi, J; Osei, S; Agbolo, A; Akinode, V; Opoku, B; Olanrewaju, S; Alabi, J; Muhammad, S}.
+       \emph{\url{https://arxiv.org/abs/2207.03546}}
+       \\
 
-{(2019)} {Meyer, Josh.} {\bf Multi-Task and Transfer Learning in Low-Resource Speech Recognition.} {PhD Dissertation. Univeristy of Arizona.} {\href{http://jrmeyer.github.io/misc/MEYER_dissertation_2019.pdf}{[Link]}} \\
+{(2022)}
+{The Makerere Radio Speech Corpus: A Luganda Radio Corpus for Automatic Speech Recognition}.
+       {LREC 2022}.
+       {Mukiibi, J; Katumba, A; Nakatumba-Nabende, J; Hussein, A; \textbf{Meyer, J}}.
+       \emph{\url{https://arxiv.org/abs/2206.09790}}\\
+      
+{(2021)}
+{Multilingual Spoken Words Corpus.}
+       {NeurIPS 2021 (Datasets and Benchmarks Track)}.
+       {Mazumder, M; Chitlangia, S; Banbury, C; Kang, Y; Ciro, JM; Achorn, K; Galvez, D; Sabini, M; Mattson, P; Kanter, D; Diamos, G; Warden, P; \textbf{Meyer, J}; Reddi, V.}
+       \emph{\url{https://arxiv.org/abs/2206.09790}}
+       \\
 
-{(2018)} {Meyer, Josh.} {\bf Unsupervised Task Discovery for Multi-Task Acoustic Modeling.} {Proceedings of the Machine Learning in Speech and Language Processing Workshop.} {\href{https://github.com/JRMeyer/mlslp/blob/master/poster/mlslp-poster.pdf}{[Poster]}} {\href{https://sites.google.com/view/mlslp/proceedings}{[Link]}} \\
+{(2021)}
+{Few-Shot Keyword Spotting in Any Language.}
+       {INTERSPEECH 2021}.
+       {Mazumder, M; Banbury, C; \textbf{Meyer, J}; Warden, P; Reddi, V.}
+       \emph{\url{https://arxiv.org/abs/2104.01454}}
+       \\
 
-{(2018)} {Meyer, Joshua, and Kloehn, Nick, and Carnie, Andrew.} {\bf{The Field is not the Lab, and the Lab is not the Field: Experimental linguistics and endangered language communities.}} {{\it Insights from Practices in Community-Based Research: From Theory To Practice Around The Globe, ISBN: 978-3-11-052701-8} Edited by Shannon Bischoff and Carmen Jany. \textit{Mouton De Gruyter}} {\href{https://www.degruyter.com/view/product/481684}{[Link]}}\\
+{(2020)}
+{Common Voice: A Massively-Multilingual Speech Corpus.}
+       {LREC 2020}
+       {Ardila, R; Branson, M; Davis, K; Henretty, M; Kohler, M; \textbf{Meyer, J}; Morais, R; Saunders, L; Tyers, F; Weber, G}.
+       \emph{\url{https://arxiv.org/abs/1912.06670}}
+       \\
 
-{(2018)} {Bekmurzaev, Nurbek, and Lottholz, Philipp, and Meyer, Joshua.} {\textbf{Navigating the safety implications of doing research and being researched in Kyrgyzstan: cooperation, networks and framing.}} {\textit{Central Asian Survey, 37:1, 100-118, DOI: 10.1080/02634937.2017.1419165}}{\href{https://www.tandfonline.com/doi/abs/10.1080/02634937.2017.1419165}{[Link]}}\\
+{(2020)}
+{Artie Bias Corpus: An Open Dataset for Detecting Demographic Bias in Speech Applications}.
+       {LREC 2020}.
+       {\textbf{Meyer, J}; Rauchenstein, L; Eisenberg, J; Howell, N}.
+       \emph{\url{https://aclanthology.org/2020.lrec-1.796/}}
+       \\
 
-{(2017)} {Meyer, Joshua.} {{\bf Development of a Kyrgyz Speech Synthesizer: A Demonstration of the Ossian Frontend and Merlin Neural Network Speech Synthesis Toolkit.}} {\textit{Proceedings of The 5th International Conference on Computer Processing of Turkic Languages, Vol. 1, 130-136}.}{\href{http://www.turklang.tatar/wp-content/uploads/2017/05/TurkLang-2017.-Tom1.pdf}{[Link]}}\\
+{(2019)}
+{Multi-Task and Transfer Learning in Low-Resource Speech Recognition}.
+       {\textbf{Meyer, J}}.
+       {PhD Dissertation. University of Arizona}.
+       \emph{\url{http://jrmeyer.github.io/misc/MEYER_dissertation_2019.pdf}}
+       \\
 
-{(2016)} {Lottholz, Philipp, and Meyer, Joshua.} {{\bf ‘Friend’ or ‘Foreign Agent’? On the Limits of Field Research in Post-Soviet Kyrgyzstan.}} {\textit{Exeter Central Asian Studies Network}.} { \href{https://blogs.exeter.ac.uk/excas/2016/04/14/friend-or-foreign-agent-on-the-limits-of-field-research-in-post-soviet-kyrgyzstan/}{[Link]}}\\
+{(2018)}
+{Unsupervised Task Discovery for Multi-Task Acoustic Modeling}.
+       {\textbf{Meyer, J}}.
+       {Machine Learning in Speech and Language Processing Workshop (co-located INTERSPEECH 2018)}.
+       \emph{\url{https://github.com/JRMeyer/mlslp/blob/master/poster/mlslp-poster.pdf}}
+       \\
 
-{(2016)} {Meyer, Joshua.} {\bf Conducting Linguistic Fieldwork in Kyrgyzstan.} {\textit{Arizona Anthropologist}, Vol. 27.} { \href{https://journals.uair.arizona.edu/index.php/arizanthro/article/viewFile/21375/20949}{[Link]}} \\
+{(2018)}
+{The Field is not the Lab, and the Lab is not the Field: Experimental linguistics and endangered language communities}.
+       {Insights from Practices in Community-Based Research}.
+       {\textbf{Meyer, J}; Kloehn, N; Carnie, A}.
+       \emph{\url{https://www.degruyter.com/view/product/481684}}
+       \\
 
+{(2018)}
+{Navigating the safety implications of doing research and being researched in Kyrgyzstan: cooperation, networks and framing}.
+       {Central Asian Survey}.
+       {Bekmurzaev, N; Lottholz, P; \textbf{Meyer, J}}.
+       \emph{\url{https://www.tandfonline.com/doi/abs/10.1080/02634937.2017.1419165}}
+       \\
+
+{(2017)}
+{Development of a Kyrgyz Speech Synthesizer: A Demonstration of the Ossian Frontend and Merlin Neural Network Speech Synthesis Toolkit}.
+       {Proceedings of The 5th International Conference on Computer Processing of Turkic Languages}.
+       {\textbf{Meyer, J}}.
+       \emph{\url{http://www.turklang.tatar/wp-content/uploads/2017/05/TurkLang-2017.-Tom1.pdf}}
+       \\
+
+{(2016)}
+{‘Friend’ or ‘Foreign Agent’? On the Limits of Field Research in Post-Soviet Kyrgyzstan}.
+       {Exeter Central Asian Studies Network}.
+       {Lottholz, P; \textbf{Meyer, J}}.
+       \emph{\url{https://blogs.exeter.ac.uk/excas/2016/04/14/friend-or-foreign-agent-on-the-limits-of-field-research-in-post-soviet-kyrgyzstan/}}
+       \\
+
+{(2016)}
+{Conducting Linguistic Fieldwork in Kyrgyzstan}.
+       {Arizona Anthropologist, Vol. 27}.
+       {\textbf{Meyer, J}}.
+       \emph{\url{https://journals.uair.arizona.edu/index.php/arizanthro/article/viewFile/21375/20949}}
+       \\
+  
 \end{rSection}
 
-\end{minipage}
 %----------------------------------------------------------------------------------------
 
 
@@ -471,6 +611,24 @@ Other & TensorFlow, PyTorch (\textit{some knowledge}), Kaldi, scikit-learn, pand
 
 
 
+%----------------------------------------------------------------------------------------
+
+\vspace{.25cm}
+
+\begin{rSection}{Open Source Work}
+
+{\textbf{Coqui STT}} {\hfill \textit{Trained Coqui's best STT model on 47k hours of data} {\hspace{2.5cm} \href{https://github.com/coqui-ai/STT/releases/tag/v1.0.0}{\textbf{[Code]}}}} \\\vspace{-.35cm}
+
+{\textbf{Mozilla DeepSpeech}} {\hfill \textit{Added Transfer Learning} {\hspace{2.5cm} \href{https://github.com/mozilla/DeepSpeech/releases/tag/v0.7.0}{\textbf{[Code]}}}} \\\vspace{-.35cm}
+
+{\textbf{Multi-Task Kaldi}} {\hfill \textit{Multi-Task Acoustic Modeling} {\hspace{2.5cm} \href{https://github.com/JRMeyer/multi-task-kaldi}{\textbf{[Code]}}}} \\\vspace{-.35cm}
+
+{\textbf{NVDA}} {\hfill \textit{Added Kyrgyz language to screen reader} {\hspace{2.5cm} \href{https://github.com/JRMeyer/nvda}{\textbf{[Code]}}}} \\\vspace{-.35cm}
+
+{\textbf{eSpeak NG}} {\hfill \textit{Added Kyrgyz language to speech synthesizer} {\hspace{2.5cm} \href{https://github.com/rhdunn/espeak/commits?author=JRMeyer}{\textbf{[Code]}}}}\\\vspace{-.35cm}
+
+{\textbf{Autotrace}} {\hfill \textit{Created visualization tools for ultrasonic imaging} {\hspace{2.5cm} \href{https://github.com/JRMeyer/Autotrace}{\textbf{[Code]}}}} \\
+\end{rSection}
 
 
 
@@ -530,3 +688,20 @@ Other & TensorFlow, PyTorch (\textit{some knowledge}), Kaldi, scikit-learn, pand
 
 %% \end{minipage}
 %% %------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{\textwidth}
+\begin{rSection}{Technical Strengths}
+
+\vspace{.25cm}
+
+\begin{tabular}{ll}
+Computer Languages & Python, Bash, MATLAB, Perl, R, C++ (\textit{some knowledge}) \\
+Other & TensorFlow, PyTorch (\textit{some knowledge}), Kaldi, scikit-learn, pandas,\\
+& nltk, matplotlib, kenlm, Linux, AWS, git, GitHub \\
+\end{tabular}
+\end{rSection}
+\end{minipage}
