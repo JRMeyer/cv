@@ -1,10 +1,10 @@
 *~
 *.pdf
+*.pdf_tex
 *.PDF
 *.log
 *.out
 *.aux
 *.bbl
 *.blg
-svg-inkscape
 .DS_store
